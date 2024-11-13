@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0.100
+FROM mcr.microsoft.com/dotnet/sdk:9.0.100
 
 LABEL "com.github.actions.name"="sonarscan-dotnet"
-LABEL "com.github.actions.description"="Sonarscanner for .NET 8 with pull request decoration support."
+LABEL "com.github.actions.description"="SonarScanner for .NET 9 with pull request decoration support."
 LABEL "com.github.actions.icon"="check-square"
 LABEL "com.github.actions.color"="blue"
 
@@ -12,9 +12,9 @@ LABEL "homepage"="https://github.com/highbyte"
 LABEL "maintainer"="Highbyte"
 
 # Version numbers of used software
-ENV SONAR_SCANNER_DOTNET_TOOL_VERSION=5.14 \
-    DOTNETCORE_RUNTIME_VERSION=6.0 \
-    NODE_VERSION=20 \
+ENV SONAR_SCANNER_DOTNET_TOOL_VERSION=9.0.1 \
+    DOTNETCORE_RUNTIME_VERSION=8.0 \
+    NODE_VERSION=22 \
     JRE_VERSION=17
 
 # Add Microsoft Debian apt-get feed 
